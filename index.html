@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastros de Pessoas</title>
+</head>
+<body>
+    
+    <h1>Dados do Cadastro</h1>
+
+    <form method="post" action="/validar">
+
+        <div>
+        <label for="nomeDaPessoa">Nome: </label>
+        <input type="text" name="nome" id="nomeDaPessoa"
+        placeholder="Insira o Nome">
+        </div>
+
+        <div>
+            <label for="usuario">Usuario: </label>
+            <input type="text" name="usuario"
+            id="usuario"placeholder="insira o usuario">
+        </div>
+
+        <div>
+            <label for="senha">Senha: </label>
+            <input type="password" name="senha" id="senha"
+            placeholder="insira a senha">
+        </div>
+        <div>
+
+            <label>Genero</label>
+            <div>
+                <input type="radio" name="genero" id="feminino" value="f">
+                <label for="femenino">feminino</label>
+            </div>
+            <div>
+                <input type="radio" name="genero" id="masculino" value="m">
+                <label for="masculino">masculino</label>
+            </div>
+            <div>
+                <input type="radio" name="genero" id="naBinario" value="nb">
+                <label for="naoBinario">Não Binario</label>
+            </div>
+            <div>
+                <input type="radio" name="genero" id="NResponder" value="nr">
+                <label for="NResponder">Prefiro Não Responder</label>
+            </div>
+
+        </div>
+        <div>
+            <label>Areas de Interesse</label>
+            <div>
+                <input type="checkbox" name="web" id="web">
+                <label for="web">Sistemas WEb</label>
+            </div>
+            <div>
+                <input type="checkbox" name="bd" id="bd">
+                <label for="bd">Banco de Dados</label>
+            </div>
+            <div>
+                <input type="checkbox" name="redes" id="redes">
+                <label for="redes">redes de computadores</label>
+            </div>
+        </div>
+        <div>
+            <label for="uf">Estado</label>
+            <select name="uf" id="estado">
+                <option value="0" selected disabled>Selecione</option>
+                <option value="1">Minas Gerais</option>
+                <option value="2">Sâo Paulo</option>
+                <option value="3">Rio de janeiro</option>
+                <option value="4">Espirito Santo</option>
+                <option value="5">Parana</option>
+                <option value="6">Santa Catarina</option>
+                <option value="7">Rio Grande do Sul</option>
+                <option value="8">Bahia</option>
+            </select>
+        </div>
+        <input type="submit" value="Cadastrar Input">
+        <button type="submit">Cadastrar butao</button>
+    </form>
+
+</body>
+</html>
